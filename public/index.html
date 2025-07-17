@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi & Cek Parkir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konfirmasi & Cek Status Parkir</h1>
+        
+        <div class="glass-card" style="text-align: center;">
+            <p style="margin-bottom: 1rem;">Masukkan kode unik Anda, lalu pilih nomor slot tempat Anda parkir.</p>
+            
+            <div id="form-konfirmasi">
+                <input type="number" id="input-kode" placeholder="Kode Unik" style="text-align: center; padding: 10px; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.1); color: white; font-size: 1.2em; width: 150px;">
+                
+                <div id="pilihan-slot" style="margin: 1.5rem 0;">
+                    <strong style="display: block; margin-bottom: 0.5rem;">Pilih Slot Parkir Anda:</strong>
+                    <input type="radio" name="slot" id="slot1" value="1"> <label for="slot1">Slot 1</label>
+                    <input type="radio" name="slot" id="slot2" value="2" style="margin-left: 20px;"> <label for="slot2">Slot 2</label>
+                </div>
+                
+                <button class="glass-button" onclick="konfirmasiDanCek()">Konfirmasi & Cek</button>
+            </div>
+        </div>
+
+        <div id="hasil-cek" class="glass-card" style="display:none; margin-top: 2rem;"></div>
+    </div>
+
+    <script src="user_script.js"></script>
+</body>
+</html>
